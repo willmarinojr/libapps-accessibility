@@ -38,12 +38,12 @@ function fixWeeklyHours() {
 			var today = document.getElementById(targetTable).getElementsByClassName("s-lc-h-today-h")[0].getElementsByClassName("s-lc-h-head-date")[0];
 			var text = document.getElementById(targetTable).getElementsByClassName("s-lc-h-today-h")[0].getElementsByClassName("s-lc-h-head-date")[0].textContent;
 			if (text.includes("Today")) {
-        // do nothing, marker already exists;
-      } else {
+        		// do nothing, marker already exists;
+      		} else {
 				today.innerHTML = "Today <br>" + text;
-        today.insertAdjacentHTML('beforeend','<br>');
+        		today.insertAdjacentHTML('beforeend','<br>');
 			}
-    today.style.color = "#000";
+    		today.style.color = "#000";
 		}
 	}
 }
